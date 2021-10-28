@@ -1,11 +1,17 @@
 #!/usr/bin/env node
 const clearConsole = require('clear-any-console');
 
-clearConsole()
+clearConsole();
+
+const packageJSON = require('./package.json');
+
+console.log(`
+NAME: ${packageJSON.name}
+VERSION: ${packageJSON.version},
+DESCRIPTION: ${packageJSON.description},
+
+`);
 
 console.log(`
 tomepajk 
-
-console log 
-
 `);
